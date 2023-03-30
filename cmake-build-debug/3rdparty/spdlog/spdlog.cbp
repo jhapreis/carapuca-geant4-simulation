@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="spdlog"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\geant4\;CMake Files\..\..\..\geant4\geant4-v11.1.1-install\;CMake Files\..\..\..\geant4\geant4-v11.1.1-install\lib\;CMake Files\..\..\..\geant4\geant4-v11.1.1-install\lib\cmake\;CMake Files\..\..\..\geant4\geant4-v11.1.1-install\lib\cmake\Geant4\;CMake Files\..\..\..\geant4\geant4-v11.1.1-install\lib\cmake\Geant4\PTL\;CMake Files\..\..\..\geant4\geant4-v11.1.1-install\lib\cmake\Geant4\Modules\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\usr\lib\;CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\;CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\;CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Core\;CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\;CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Widgets\;CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5OpenGL\;CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5PrintSupport\;CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt53DCore\;CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Network\;CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt53DExtras\;CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt53DRender\;CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt53DInput\;CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt53DLogic\;CMake Files\3rdparty\;CMake Files\3rdparty\spdlog\;CMake Files\3rdparty\spdlog\cmake\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/jhapreis/Documents/IC/CArapuca-New/cmake-build-debug/3rdparty/spdlog"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/home/jhapreis/Documents/IC/CArapuca-New/cmake-build-debug/3rdparty/spdlog/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/home/jhapreis/Documents/IC/CArapuca-New/cmake-build-debug/3rdparty/spdlog/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/home/jhapreis/Documents/IC/CArapuca-New/cmake-build-debug/3rdparty/spdlog/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/home/jhapreis/Documents/IC/CArapuca-New/cmake-build-debug/3rdparty/spdlog/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="spdlog">
+				<Option output="/home/jhapreis/Documents/IC/CArapuca-New/cmake-build-debug/3rdparty/spdlog/libspdlogd.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jhapreis/Documents/IC/CArapuca-New/cmake-build-debug/3rdparty/spdlog"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DSPDLOG_COMPILED_LIB"/>
+					<Add directory="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/home/jhapreis/Documents/IC/CArapuca-New/cmake-build-debug/3rdparty/spdlog/Makefile&quot;  VERBOSE=1 spdlog"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/home/jhapreis/Documents/IC/CArapuca-New/cmake-build-debug/3rdparty/spdlog/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/home/jhapreis/Documents/IC/CArapuca-New/cmake-build-debug/3rdparty/spdlog/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/home/jhapreis/Documents/IC/CArapuca-New/cmake-build-debug/3rdparty/spdlog/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="spdlog/fast">
+				<Option output="/home/jhapreis/Documents/IC/CArapuca-New/cmake-build-debug/3rdparty/spdlog/libspdlogd.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jhapreis/Documents/IC/CArapuca-New/cmake-build-debug/3rdparty/spdlog"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DSPDLOG_COMPILED_LIB"/>
+					<Add directory="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/home/jhapreis/Documents/IC/CArapuca-New/cmake-build-debug/3rdparty/spdlog/Makefile&quot;  VERBOSE=1 spdlog/fast"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/home/jhapreis/Documents/IC/CArapuca-New/cmake-build-debug/3rdparty/spdlog/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/home/jhapreis/Documents/IC/CArapuca-New/cmake-build-debug/3rdparty/spdlog/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/home/jhapreis/Documents/IC/CArapuca-New/cmake-build-debug/3rdparty/spdlog/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/async.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/async_logger-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/async_logger.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/common-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/common.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/details/backtracer-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/details/backtracer.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/details/circular_q.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/details/console_globals.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/details/file_helper-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/details/file_helper.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/details/fmt_helper.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/details/log_msg-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/details/log_msg.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/details/log_msg_buffer-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/details/log_msg_buffer.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/details/mpmc_blocking_q.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/details/null_mutex.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/details/os-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/details/os.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/details/pattern_formatter-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/details/pattern_formatter.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/details/periodic_worker-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/details/periodic_worker.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/details/registry-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/details/registry.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/details/synchronous_factory.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/details/tcp_client-windows.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/details/tcp_client.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/details/thread_pool-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/details/thread_pool.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/details/windows_include.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/fmt/bin_to_hex.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/fmt/bundled/chrono.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/fmt/bundled/color.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/fmt/bundled/compile.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/fmt/bundled/core.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/fmt/bundled/format-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/fmt/bundled/format.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/fmt/bundled/locale.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/fmt/bundled/os.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/fmt/bundled/ostream.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/fmt/bundled/posix.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/fmt/bundled/printf.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/fmt/bundled/ranges.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/fmt/chrono.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/fmt/fmt.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/fmt/ostr.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/formatter.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/fwd.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/logger-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/logger.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/pattern_formatter-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/pattern_formatter.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/sinks/android_sink.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/sinks/ansicolor_sink-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/sinks/ansicolor_sink.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/sinks/base_sink-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/sinks/base_sink.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/sinks/basic_file_sink-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/sinks/basic_file_sink.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/sinks/daily_file_sink.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/sinks/dist_sink.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/sinks/dup_filter_sink.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/sinks/hourly_file_sink.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/sinks/msvc_sink.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/sinks/null_sink.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/sinks/ostream_sink.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/sinks/ringbuffer_sink.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/sinks/rotating_file_sink-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/sinks/rotating_file_sink.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/sinks/sink-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/sinks/sink.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/sinks/stdout_color_sinks-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/sinks/stdout_color_sinks.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/sinks/stdout_sinks-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/sinks/stdout_sinks.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/sinks/syslog_sink.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/sinks/systemd_sink.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/sinks/tcp_sink.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/sinks/win_eventlog_sink.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/sinks/wincolor_sink-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/sinks/wincolor_sink.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/spdlog-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/spdlog.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/stopwatch.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/tweakme.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/include/spdlog/version.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/src/async.cpp">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/src/cfg.cpp">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/src/color_sinks.cpp">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/src/file_sinks.cpp">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/src/fmt.cpp">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/src/spdlog.cpp">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/src/stdout_sinks.cpp">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/../../../geant4/geant4-v11.1.1-install/lib/cmake/Geant4/G4EXPATShim.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\geant4\geant4-v11.1.1-install\lib\cmake\Geant4\"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/../../../geant4/geant4-v11.1.1-install/lib/cmake/Geant4/G4X11Shim.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\geant4\geant4-v11.1.1-install\lib\cmake\Geant4\"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/../../../geant4/geant4-v11.1.1-install/lib/cmake/Geant4/Geant4Config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\geant4\geant4-v11.1.1-install\lib\cmake\Geant4\"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/../../../geant4/geant4-v11.1.1-install/lib/cmake/Geant4/Geant4ConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\geant4\geant4-v11.1.1-install\lib\cmake\Geant4\"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/../../../geant4/geant4-v11.1.1-install/lib/cmake/Geant4/Geant4LibraryDepends-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\geant4\geant4-v11.1.1-install\lib\cmake\Geant4\"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/../../../geant4/geant4-v11.1.1-install/lib/cmake/Geant4/Geant4LibraryDepends.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\geant4\geant4-v11.1.1-install\lib\cmake\Geant4\"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/../../../geant4/geant4-v11.1.1-install/lib/cmake/Geant4/Geant4PackageCache.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\geant4\geant4-v11.1.1-install\lib\cmake\Geant4\"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/../../../geant4/geant4-v11.1.1-install/lib/cmake/Geant4/UseGeant4.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\geant4\geant4-v11.1.1-install\lib\cmake\Geant4\"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/../../../geant4/geant4-v11.1.1-install/lib/cmake/Geant4/PTL/PTLConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\geant4\geant4-v11.1.1-install\lib\cmake\Geant4\PTL\"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/../../../geant4/geant4-v11.1.1-install/lib/cmake/Geant4/PTL/PTLConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\geant4\geant4-v11.1.1-install\lib\cmake\Geant4\PTL\"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/../../../geant4/geant4-v11.1.1-install/lib/cmake/Geant4/PTL/PTLTargets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\geant4\geant4-v11.1.1-install\lib\cmake\Geant4\PTL\"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/../../../geant4/geant4-v11.1.1-install/lib/cmake/Geant4/PTL/PTLTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\geant4\geant4-v11.1.1-install\lib\cmake\Geant4\PTL\"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/../../../geant4/geant4-v11.1.1-install/lib/cmake/Geant4/Modules/IntelCompileFeatures.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\geant4\geant4-v11.1.1-install\lib\cmake\Geant4\Modules\"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/../../../geant4/geant4-v11.1.1-install/lib/cmake/Geant4/Modules/MSVCCompileFeatures.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\geant4\geant4-v11.1.1-install\lib\cmake\Geant4\Modules\"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfigExtras.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreMacros.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5GuiConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QComposePlatformInputContextPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEglFSEmulatorIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEglFSIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEglFSKmsEglDeviceIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEglFSKmsGbmIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEglFSX11IntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEvdevKeyboardPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEvdevMousePlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEvdevTabletPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEvdevTouchScreenPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QGifPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QICOPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QIbusPlatformInputContextPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QJpegPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QLibInputPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QLinuxFbIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QMinimalEglIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QMinimalIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QOffscreenIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QTuioTouchPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QVncIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QXcbEglIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QXcbGlxIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QXcbIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Widgets\"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Widgets\"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Widgets\"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Widgets\"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5OpenGL/Qt5OpenGLConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5OpenGL\"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5OpenGL/Qt5OpenGLConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5OpenGL\"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5PrintSupport/Qt5PrintSupportConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5PrintSupport\"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5PrintSupport/Qt5PrintSupportConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5PrintSupport\"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5PrintSupport/Qt5PrintSupport_QCupsPrinterSupportPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5PrintSupport\"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt53DCore/Qt53DCoreConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt53DCore\"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt53DCore/Qt53DCoreConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt53DCore\"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Network/Qt5NetworkConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Network\"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Network/Qt5NetworkConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Network\"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Network/Qt5Network_QConnmanEnginePlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Network\"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Network/Qt5Network_QGenericEnginePlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Network\"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Network/Qt5Network_QNetworkManagerEnginePlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Network\"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt53DExtras/Qt53DExtrasConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt53DExtras\"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt53DExtras/Qt53DExtrasConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt53DExtras\"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt53DRender/Qt53DRenderConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt53DRender\"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt53DRender/Qt53DRenderConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt53DRender\"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt53DInput/Qt53DInputConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt53DInput\"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt53DInput/Qt53DInputConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt53DInput\"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt53DLogic/Qt53DLogicConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt53DLogic\"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt53DLogic/Qt53DLogicConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt53DLogic\"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\3rdparty\spdlog\"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/cmake/ide.cmake">
+			<Option virtualFolder="CMake Files\3rdparty\spdlog\cmake\"/>
+		</Unit>
+		<Unit filename="/home/jhapreis/Documents/IC/CArapuca-New/3rdparty/spdlog/cmake/utils.cmake">
+			<Option virtualFolder="CMake Files\3rdparty\spdlog\cmake\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

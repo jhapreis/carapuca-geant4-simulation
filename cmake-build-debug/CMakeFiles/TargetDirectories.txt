@@ -1,0 +1,6 @@
+/home/jhapreis/Documents/IC/C-Arapuca-Open-New/cmake-build-debug/CMakeFiles/ArapucaSim.dir
+/home/jhapreis/Documents/IC/C-Arapuca-Open-New/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/jhapreis/Documents/IC/C-Arapuca-Open-New/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/jhapreis/Documents/IC/C-Arapuca-Open-New/cmake-build-debug/3rdparty/spdlog/CMakeFiles/spdlog.dir
+/home/jhapreis/Documents/IC/C-Arapuca-Open-New/cmake-build-debug/3rdparty/spdlog/CMakeFiles/edit_cache.dir
+/home/jhapreis/Documents/IC/C-Arapuca-Open-New/cmake-build-debug/3rdparty/spdlog/CMakeFiles/rebuild_cache.dir

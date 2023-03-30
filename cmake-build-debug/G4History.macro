@@ -1,0 +1,16 @@
+/run/verbose 2
+/run/initialize
+/control/execute macros/vis.mac
+/vis/open OGL 600x600-0+0
+/vis/sceneHandler/create OGL
+/vis/viewer/create ! ! 600x600-0+0
+/vis/viewer/refresh
+/vis/verbose errors
+/vis/drawVolume
+/vis/scene/create
+/vis/scene/add/volume world -1 -1 none m 0 0 0 0 0 0
+/vis/sceneHandler/attach
+/vis/viewer/set/style s
+/vis/viewer/refresh
+/vis/viewer/set/hiddenEdge 1
+/vis/viewer/refresh

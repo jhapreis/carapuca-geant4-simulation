@@ -1,0 +1,15 @@
+# This is a comment and will be ignored by geant4
+#/arapuca/inputDataFile ../data/arapuca.cfg
+
+/run/verbose 0
+/event/verbose 0
+/tracking/verbose 0
+
+/gun/particle mu-
+/gun/energy 4.0 GeV
+/gun/polarization 1 1 1 
+
+/gun/position   -5 10 -50 cm
+/gun/direction  0 0 1
+
+/run/beamOn 1
