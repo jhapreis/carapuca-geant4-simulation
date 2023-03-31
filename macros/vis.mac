@@ -48,7 +48,7 @@
 
 
 # To superimpose all of the events from a given run:
-/vis/scene/endOfEventAction accumulate
+/vis/scene/endOfEventAction accumulate -1
 
 
 # Decorations
