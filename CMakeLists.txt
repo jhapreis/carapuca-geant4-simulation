@@ -12,8 +12,7 @@ endif()
 # add_definitions("-Wall" "-g")
 add_subdirectory(3rdparty/spdlog)
 add_subdirectory(3rdparty/rapidjson)
-
-
+set(CADMESH_HH "3rdparty/cadmesh/CADMesh.hh")
 
 # Project infos
 set(PROJECT_NAME "CArapuca")
@@ -38,7 +37,7 @@ file(GLOB_RECURSE headers ${PROJECT_SOURCE_DIR}/include/*.hh)
 # message(headers="${headers}")
 
 
-add_executable(${EXECUTABLE_FILENAME} main.cpp ${sources} ${headers})
+add_executable(${EXECUTABLE_FILENAME} main.cpp ${sources} ${headers} ${CADMESH_HH})
 
 target_include_directories(
 	${EXECUTABLE_FILENAME} 
