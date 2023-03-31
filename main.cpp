@@ -22,18 +22,7 @@
 
 int main(int argc, char** argv){
 
-    auto data_file   = JsonFile("data.json");
-    auto logger_file = JsonFile("logger.json");
-
-    auto data_document   = data_file.GetDocument();
-    auto logger_document = logger_file.GetDocument();
-
-    std::cout << (*data_document)["intValue"].GetInt() << std::endl;
-    std::cout << (*data_document)["doubleValue"].GetDouble() << std::endl;
-    std::cout << (*data_document)["stringValue"].GetString() << std::endl;
-
-
-    auto log_manager = LogManager("main", "info", "", (*logger_document)["logfile"].GetString()).GetLogger();
+    auto log_manager = LogManager("main", "info", "", "/home/jhapreis/Documents/IC/C-Arapuca-Open-New/logs/log.log").GetLogger();
     log_manager->info("Starting main execution...");
 
 
@@ -45,7 +34,7 @@ int main(int argc, char** argv){
     runManager->SetUserInitialization(physicsList);
 
     log_manager->info("Setting Construction...");
-    runManager->SetUserInitialization( new Construction() );
+    runManager->SetUserInitialization( new Construction("data/cad/geometries/assembly/assembly1.obj") );
 
     log_manager->info("Setting Action Initialization...");
     runManager->SetUserInitialization( new ActionInitialization() );
@@ -63,7 +52,7 @@ int main(int argc, char** argv){
     if (argc == 1){
         // interactive mode
         auto ui = std::make_unique<G4UIExecutive>(argc, argv); 
-        UImanager->ApplyCommand("/control/execute init_vis.mac");
+        UImanager->ApplyCommand("/control/execute macros/init_vis.mac");
         ui.get()->SessionStart();
     } else {
         // batch mode
