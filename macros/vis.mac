@@ -78,11 +78,8 @@
 /vis/set/colour        # Revert to default colour (white)
 /vis/set/lineWidth     # Revert to default line width (1.)
 
-# To get nice view
-# Make the "World" box invisible
-/vis/geometry/set/visibility LogicalWorld 0 false
-# Transparent blue to represent water
-/vis/geometry/set/colour log_carapuca_frontplate 0 0 0 1 .3
+# /vis/geometry/set/visibility Logical_World 0 false
+# /vis/geometry/set/colour logical_box 0 0 0 1 .3
 /vis/viewer/set/style surface
 /vis/viewer/set/hiddenMarker true
 /vis/viewer/set/viewpointThetaPhi 120 150
@@ -92,6 +89,7 @@
 /vis/viewer/set/autoRefresh true
 /vis/verbose warnings
 
-
-# For file-based drivers, use this to create an empty detector view:
-#/vis/viewer/flush
+/gun/particle gamma
+/gun/momentum 0 -1 0 eV
+/gun/position 0 1 0 cm
+/gun/energy 3 eV

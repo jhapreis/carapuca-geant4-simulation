@@ -27,7 +27,7 @@ class Construction : public G4VUserDetectorConstruction{
     public:
         Construction(G4String const& carapuca_filename);
         ~Construction();
-        virtual G4VPhysicalVolume* Construct();
+        G4VPhysicalVolume* Construct();
 
     private:
 
@@ -35,8 +35,8 @@ class Construction : public G4VUserDetectorConstruction{
         G4VPhysicalVolume* GenerateCArapuca(G4Material* material, G4String const& filename, G4int scale, G4VSensitiveDetector *pSDetector, G4LogicalVolume* pMotherVolume, G4RotationMatrix *pRot, const G4ThreeVector &translation);
         G4VPhysicalVolume* GenerateTestVolume();
 
-        G4VPhysicalVolume* physical_world;
-        G4VPhysicalVolume* physical_carapuca;
+        // G4VPhysicalVolume* physical_world;
+        // G4VPhysicalVolume* physical_carapuca;
 
         std::shared_ptr<spdlog::logger> logmanager;
 

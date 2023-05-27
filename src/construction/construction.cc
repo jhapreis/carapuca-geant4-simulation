@@ -9,56 +9,92 @@ carapuca_filename(carapuca_filename)
 
 Construction::~Construction() = default;
 
-G4VPhysicalVolume *Construction::Construct()
-{
-    logmanager->info("Constructing...");
+G4VPhysicalVolume* Construction::Construct(){
+    auto vaccum = Materials::Vacuum();
+    printf("----- Vaccum Temperature: %f.\n", vaccum->GetTemperature());
 
-    physical_world = GenerateWorld();
+    auto world_box      = new G4Box("World_Box", 100*CLHEP::mm, 100*CLHEP::mm, 100*CLHEP::mm);
+    auto logical_world  = new G4LogicalVolume(world_box, vaccum, "Logical_World");
+    auto physical_world = new G4PVPlacement(nullptr, {0.,0.,0.}, logical_world, "Physical_World", nullptr, false, 0);
 
+    auto box          = new G4Box("Box", 100*CLHEP::mm, 50*CLHEP::mm, 5*CLHEP::mm);
+    auto logical_box  = new G4LogicalVolume(box, vaccum, "logical_box");
+    auto phsyical_box = new G4PVPlacement(nullptr, {0.,0.,0.}, logical_box, "physical_box", physical_world->GetLogicalVolume(), false, 0);
 
-    auto vikuiti = Materials::Vikuiti();
-
-    physical_carapuca = GenerateCArapuca(
-        vikuiti,
-        carapuca_filename,
-        500,
-        nullptr,
-        physical_world->GetLogicalVolume(),
-        nullptr,
-        G4ThreeVector(0.,0.,0.)
-    );
-
-    return physical_world;
+    return phsyical_box;
 }
 
-G4VPhysicalVolume *Construction::GenerateTestVolume()
-{
-    logmanager->info("Generating test volume...");
 
-    auto air = Materials::Air();
+G4VPhysicalVolume* BuildCarapuca(){
 
-    auto position = G4ThreeVector(0., 0., 0.);
+    auto vaccum = Materials::Vacuum();
+    // auto air = Materials::Air();
+    // auto vikuiti = Materials::Vikuiti();
+    // auto ej286 = Materials::EJ286();
+    // auto glass = Materials::OpticalGlass();
 
-    auto test  = new G4Tubs("volTest", 0., 10.*cm, 20.*cm, 0., 2*M_PI*rad);
-    auto logic = new G4LogicalVolume(test, air, "LogicalVolume");
-    auto physi = new G4PVPlacement(nullptr, position, logic, "PhysicalVolume", physical_world->GetLogicalVolume(), false, 0, true);
 
-    return physi;
-}
+    //World
 
-G4VPhysicalVolume *Construction::GenerateWorld(){
+    auto worldBox = new G4Box("worldBox", 100*CLHEP::mm, 100*CLHEP::mm, 100*CLHEP::mm);
+    auto logicalWorld = new G4LogicalVolume(worldBox, vaccum, "Logical World");
+    auto physicalWorld = new G4PVPlacement(nullptr, {0,0,0}, logicalWorld, "Physical World", nullptr, false, 0);
 
-    logmanager->info("Generating Physical World...");
 
-    auto lAr = Materials::LiquidArgon();
+    // Outside box
 
-    auto position = G4ThreeVector(0., 0., 0.);
+    auto x  = 93*CLHEP::mm/2;
+    auto y1 = 10.5*CLHEP::mm/2;
+    auto z  = 70*CLHEP::mm/2;
+    auto thickness = 8.70*CLHEP::mm/2;
 
-    auto worldBox = new G4Box("worldBox", 0.5 * m, 0.5 * m, 0.5 * m);
-    auto logWorld = new G4LogicalVolume(worldBox, lAr, "LogicalWorld");
-    auto phyWorld = new G4PVPlacement(nullptr, position, logWorld, "PhysicalWorld", nullptr, false, 0, true);
-    return phyWorld;
-}
+    auto __out_box = new G4Box("outside_box", x, y1, z);
+    auto __in_box  = new G4Box("inside_box" , x-thickness, y1-0.001*CLHEP::mm, z-thickness );
+
+    auto box = new G4SubtractionSolid("box", __out_box, __in_box, nullptr, {0,thickness,0});
+
+    auto logical_box = new G4LogicalVolume(box, vaccum, "logical_box");
+
+    auto physical_box = new G4PVPlacement(nullptr, {0,0,0}, "physical_box", logical_box, physicalWorld, false, 0, false);
+
+    
+    // Dichroic Filter
+
+    auto y2 = 2*CLHEP::mm/2;
+
+    auto filter = new G4Box("filter", x, y2, z);
+
+    auto logical_filter = new G4LogicalVolume(filter, vaccum, "logical_filter");
+
+    auto physical_filter = new G4PVPlacement(nullptr, {0,y1+y2,0}, "physical_filter", logical_filter, physicalWorld, false, 0, false);
+
+
+    // Light guide
+
+    auto y3 = 3.8*CLHEP::mm/2;
+
+    auto light_guide = new G4Box("light_guide", x, y3, z);
+
+    auto logical_light_guide = new G4LogicalVolume(light_guide, vaccum, "logical_box");
+
+    auto physical_light_guide = new G4PVPlacement(nullptr, {0,y1+y2+y3,0}, "physical_light_guide", logical_light_guide, physicalWorld, false, 0, false);
+
+
+    // SiPM
+
+    auto size = 6*CLHEP::mm/2;
+    thickness = 0.1*CLHEP::mm/2;
+
+    auto sipm = new G4Box("sipm", size, size, thickness);
+
+    auto logical_sipm = new G4LogicalVolume(sipm, vaccum, "logical_sipm");
+
+    // auto physical_sipm = new G4PVPlacement(nullptr, {x-thickness, y1/2, z-thickness}, "physical_sipm", logical_sipm, physicalWorld, false, 0, false);
+
+
+    return physicalWorld;
+};
+
 
 G4VPhysicalVolume* Construction::GenerateCArapuca(G4Material* material, G4String const& filename, G4int scale, G4VSensitiveDetector *pSDetector, G4LogicalVolume* pMotherVolume, G4RotationMatrix *pRot, const G4ThreeVector &translation){
 
