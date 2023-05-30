@@ -23,7 +23,7 @@ Aviso: o seguinte método contempla uma instalação feita utilizando o código 
 Recomenda-se primeiro baixar as seguintes bibliotecas:
 
 ```bash
-cmake cmake-curses-gui gcc g++ libexpat1-dev qt5-default libxmu-dev libmotif-dev
+cmake cmake-curses-gui gcc g++ libexpat1-dev qt5-default libxmu-dev libmotif-dev libxerces-c-dev
 ```
 
 Note: for the case ```qt5-default``` has no installation candidate you may try the following
