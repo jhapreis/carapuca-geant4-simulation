@@ -5,4 +5,5 @@
 #/run/numberOfThreads 4
 
 /run/initialize
-/control/execute macros/vis.mac
+/control/execute macros/vis/vis.mac
+/control/execute macros/particles/particles.mac

@@ -12,5 +12,7 @@ PrimaryGenerator::~PrimaryGenerator(){
 };
 
 void PrimaryGenerator::GeneratePrimaries(G4Event* anEvent){
-    m_ParticleGun->GeneratePrimaryVertex(anEvent);
+    for (int i=0; i<5; i++){
+        m_ParticleGun->GeneratePrimaryVertex(anEvent);
+    }
 };

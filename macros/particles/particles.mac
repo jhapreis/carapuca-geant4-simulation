@@ -1,0 +1,5 @@
+/gun/particle opticalphoton
+/gun/position 10 5 0 cm
+/gun/momentum -1 -1 0 eV
+/gun/energy 3.50 eV
+/gun/polarization 1 1 1

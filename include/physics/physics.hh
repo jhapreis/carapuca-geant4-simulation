@@ -27,8 +27,7 @@
 #include "G4OpticalPhysics.hh"
 #include "G4FastSimulationPhysics.hh"
 
-#include ".cfg/logger.hh"
-
+#include "logger/logger.hh"
 #include "logger/logmanager.hh"
 
 class PhysicsList : public G4VModularPhysicsList{

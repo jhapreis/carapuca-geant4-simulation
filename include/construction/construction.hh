@@ -16,29 +16,29 @@
 #include "G4VisAttributes.hh"
 #include "G4SystemOfUnits.hh"
 #include "G4VUserDetectorConstruction.hh"
+#include "G4LogicalBorderSurface.hh"
 
 #include "materials/materials.hh"
 #include "json_file/json_file.hh"
+#include "sensitive/sensitive.hh"
 
 #include "logger/logmanager.hh"
 #include "logger/logger.hh"
 
+
 class Construction : public G4VUserDetectorConstruction{
-    public:
-        Construction(G4String const& carapuca_filename);
-        ~Construction();
-        G4VPhysicalVolume* Construct();
 
-    private:
+public:
+    explicit Construction(G4String const& carapuca_filename);
+    ~Construction() override;
+    G4VPhysicalVolume* Construct() override;
 
-        G4VPhysicalVolume* GenerateWorld();
-        G4VPhysicalVolume* GenerateCArapuca(G4Material* material, G4String const& filename, G4int scale, G4VSensitiveDetector *pSDetector, G4LogicalVolume* pMotherVolume, G4RotationMatrix *pRot, const G4ThreeVector &translation);
-        G4VPhysicalVolume* GenerateTestVolume();
+private:
+    std::shared_ptr<spdlog::logger> logmanager;
+    G4VPhysicalVolume* mother_volume;
+    G4String carapuca_filename;
 
-        // G4VPhysicalVolume* physical_world;
-        // G4VPhysicalVolume* physical_carapuca;
-
-        std::shared_ptr<spdlog::logger> logmanager;
-
-        G4String carapuca_filename;
+    G4VPhysicalVolume* BuildWorldVolume();
+    G4VPhysicalVolume* BuildDetector();
+    G4OpticalSurface* BuildVikuitiAirSurface(G4VPhysicalVolume* vikuiti_vol, G4VPhysicalVolume* air_vol);
 };

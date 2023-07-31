@@ -8,26 +8,18 @@ PhysicsList::PhysicsList(){
     logmanager->info("Setting Physics...");
 
     logmanager->info("   Setting Optical Physics...");
-    auto opticalPhysics = new G4OpticalPhysics();
-    auto opticalParameters = G4OpticalParameters::Instance();
-    //    opticalParameters->SetWLSTimeProfile("exponential");
-    //    opticalParameters->SetProcessActivation(kCerenkov,true);
-    //    opticalParameters->SetCerenkovTrackSecondariesFirst(true);
-    //    opticalParameters->SetCerenkovMaxPhotonsPerStep(10);
-    RegisterPhysics(opticalPhysics);
+    RegisterPhysics(new G4OpticalPhysics());
 
-    logmanager->info("   Setting Fast Simulation Physics...");
-    auto fastSimulationPhysics = new G4FastSimulationPhysics();
-    fastSimulationPhysics->ActivateFastSimulation("opticalphoton"); // this is for the dichroic filter paremetrization
-    RegisterPhysics(fastSimulationPhysics);
+//    logmanager->info("   Setting Fast Simulation Physics...");
+//    auto fastSimulationPhysics = new G4FastSimulationPhysics();
+//    fastSimulationPhysics->ActivateFastSimulation("opticalphoton"); // this is for the dichroic filter paremetrization
+//    RegisterPhysics(fastSimulationPhysics);
 
     logmanager->info("   Setting EM Physics...");
-    auto emPhysics = new G4EmStandardPhysics();
-    RegisterPhysics(emPhysics);
+    RegisterPhysics(new G4EmStandardPhysics());
 
     logmanager->info("   Setting Decay Physics...");
-    auto decayPhysics = new G4DecayPhysics();
-    RegisterPhysics(decayPhysics);
+    RegisterPhysics(new G4DecayPhysics());
 
     logmanager->info("   Done.");
 }

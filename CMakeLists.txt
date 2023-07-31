@@ -13,6 +13,7 @@ endif()
 add_subdirectory(3rdparty/spdlog)
 add_subdirectory(3rdparty/rapidjson)
 set(CADMESH_HH "3rdparty/cadmesh/CADMesh.hh")
+set(RAPIDCSV_HH "3rdparty/rapidcsv/rapidcsv.h")
 
 # Project infos
 set(PROJECT_NAME "CArapuca")
@@ -37,7 +38,7 @@ file(GLOB_RECURSE headers ${PROJECT_SOURCE_DIR}/include/*.hh)
 # message(headers="${headers}")
 
 
-add_executable(${EXECUTABLE_FILENAME} main.cpp ${sources} ${headers} ${CADMESH_HH})
+add_executable(${EXECUTABLE_FILENAME} main.cpp ${sources} ${headers} ${CADMESH_HH} ${RAPIDCSV_HH})
 
 target_include_directories(
 	${EXECUTABLE_FILENAME} 

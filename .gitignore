@@ -2,6 +2,7 @@
 .vscode/
 *.code-workspace
 .idea/
+.cache/
 
 # Build
 build/
@@ -10,3 +11,6 @@ cmake-build-debug/
 # Logs
 logs/
 *.log
+
+# Jupyter Notebooks
+*ipynb

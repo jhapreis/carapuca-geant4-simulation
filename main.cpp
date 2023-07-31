@@ -3,6 +3,7 @@
 #include "G4VisManager.hh"
 #include "G4VisExecutive.hh"
 #include "G4RunManagerFactory.hh"
+#include <system_error>
 
 #ifndef G4VIS_USE_OPENGLX
     #define G4VIS_USE_OPENGLX
@@ -19,14 +20,18 @@
 #include "physics/physics.hh"
 
 
+#include <iostream>
+#include <vector>
+#include "3rdparty/rapidcsv/rapidcsv.h"
+
 
 int main(int argc, char** argv){
 
-    auto log_manager = LogManager("main", "info", "", "/home/jhapreis/Documents/IC/C-Arapuca-Open-New/logs/log.log").GetLogger();
+    auto log_manager = LogManager("main", "info", "", LOGFILE_PATH).GetLogger();
     log_manager->info("Starting main execution...");
 
 
-    auto runManager = G4RunManagerFactory::CreateRunManager(G4RunManagerType::Default);
+    auto runManager = G4RunManagerFactory::CreateRunManager(G4RunManagerType::Serial);
 
 
     auto physicsList = new PhysicsList();

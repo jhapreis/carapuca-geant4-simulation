@@ -10,28 +10,25 @@ carapuca_filename(carapuca_filename)
 Construction::~Construction() = default;
 
 G4VPhysicalVolume* Construction::Construct(){
-    auto vaccum = Materials::Vacuum();
-    printf("----- Vaccum Temperature: %f.\n", vaccum->GetTemperature());
+    auto vikuiti = Materials::Vikuiti();
 
-    auto world_box      = new G4Box("World_Box", 100*CLHEP::mm, 100*CLHEP::mm, 100*CLHEP::mm);
-    auto logical_world  = new G4LogicalVolume(world_box, vaccum, "Logical_World");
-    auto physical_world = new G4PVPlacement(nullptr, {0.,0.,0.}, logical_world, "Physical_World", nullptr, false, 0);
+    mother_volume = BuildWorldVolume();
 
-    auto box          = new G4Box("Box", 100*CLHEP::mm, 50*CLHEP::mm, 5*CLHEP::mm);
-    auto logical_box  = new G4LogicalVolume(box, vaccum, "logical_box");
-    auto phsyical_box = new G4PVPlacement(nullptr, {0.,0.,0.}, logical_box, "physical_box", physical_world->GetLogicalVolume(), false, 0);
+    auto out_box = new G4Box("Box", 50*CLHEP::mm, 50*CLHEP::mm, 50*CLHEP::mm);
+    auto out_logical_box  = new G4LogicalVolume(out_box, vikuiti, "logical_box");
+    auto out_phsyical_box = new G4PVPlacement(nullptr, {0.,0.,0.}, out_logical_box, "out_physical_box", mother_volume->GetLogicalVolume(), false, 0);
 
-    return phsyical_box;
+    BuildVikuitiAirSurface(out_phsyical_box, mother_volume);
+
+    BuildDetector();
+
+    return mother_volume;
 }
 
 
 G4VPhysicalVolume* BuildCarapuca(){
 
-    auto vaccum = Materials::Vacuum();
-    // auto air = Materials::Air();
-    // auto vikuiti = Materials::Vikuiti();
-    // auto ej286 = Materials::EJ286();
-    // auto glass = Materials::OpticalGlass();
+    auto vaccum = Materials::Air();
 
 
     //World
@@ -94,17 +91,3 @@ G4VPhysicalVolume* BuildCarapuca(){
 
     return physicalWorld;
 };
-
-
-G4VPhysicalVolume* Construction::GenerateCArapuca(G4Material* material, G4String const& filename, G4int scale, G4VSensitiveDetector *pSDetector, G4LogicalVolume* pMotherVolume, G4RotationMatrix *pRot, const G4ThreeVector &translation){
-
-    auto carapuca = CADMesh::TessellatedMesh::FromOBJ(filename);
-
-    carapuca->SetScale(scale);
-
-    auto carapuca_logical = new G4LogicalVolume( carapuca->GetSolid(), material, "carapuca_logical", nullptr, pSDetector, nullptr, true);
-
-    auto carapuca_physical = new G4PVPlacement(pRot, translation, carapuca_logical, "carapuca_physical", pMotherVolume, false, 0, false);
-
-    return carapuca_physical;
-}
